@@ -19,7 +19,7 @@
 
     <!-- Start Nav-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light navBorder">
-        <a class="navbar-brand ml-5 p-3" href="index.html">Elma Lopez</a>
+        <a class="navbar-brand ml-5 p-3 " href="index.html">Elma Lopez</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav ml-auto navLinks">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home
+                    <a class="nav-link disabled" href="index.html">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -35,7 +35,7 @@
                     <a class="nav-link disabled" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link disabled" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
 
             </ul>
@@ -43,30 +43,30 @@
     </nav>
     <!-- End Nav -->
 
-    <!-- About me section -->
+    <!-- Form -->
     <div class="container mainContainer">
         <div class="row">
-            <div class="col-md-12">
-                <h2>about me </h2>
-                <div class="row">
-                    <div class="col-md-3 ">
-                        <img class="card-img-top" src="assets/images/profilePic.png" alt="profile picture">
+            <div class="col-md-12 ">
+                <h2>contact</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" placeholder="John Smith">
                     </div>
-                    <div class="col-md-9 bodyCopy">
-                        <p> I have been doing Graphic Design for the last 18 years (wow! – it's been thant long?) Even being a
-                            seasoned artist, I still learn something new almost every day. I can't say I don't enjoy doing
-                            what I do, I just want to learn more. So far I am really digging command lines on the terminal. That's one of
-                            the things I probably feared the most. I enjoy trouble shooting. Working in print, there's something
-                            that always goes wonky. I like to think of new ways of doing something that will make my job
-                            more efficient, for example automating. I am looking forward to learning Javascript. I would
-                            like to create my own scripts and plug-ins for tasks I do everyday.
-                        </p>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submitButton">Submit</button>
+                </form>
             </div>
-
         </div>
     </div>
+
     <!-- footer -->
     <footer class="footer">
         <div class="container">
